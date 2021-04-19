@@ -9,7 +9,7 @@ import TransactionHistory from "./Components/Transactions/Transactions-history"
 
 const App = () => {
     return (
-        <div>
+        <>
         <Profile
             name={user.name}
             tag={user.tag}
@@ -30,7 +30,7 @@ const App = () => {
             items={transactionsData}
         />
 
-        </div>
+        </>
     );
   };
 
