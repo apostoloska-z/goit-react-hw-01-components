@@ -8,7 +8,7 @@ function getRandomColor() {
 
 const Statistics = ({title, stats}) => (
 <section className={styles.statistics}>
-  <h2 className={styles.title}>{title}</h2>
+  {title && <h2 className={styles.title}>{title}</h2>}
   <ul className={styles.stats__list}>
     {stats.map(({id, label, percentage}) => (
         <li key={id} className={styles.list__item} style={{backgroundColor:getRandomColor()}}>
